@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <!--输出日志格式-->
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                <!-- 彩色日志格式，magenta：洋红，boldMagenta：粗红，yan：青色，·⊱══> -->
+                %boldMagenta([%d{yyyy-MM-dd HH:mm:ss.SSS}]) %cyan([traceId:%X{traceId}]) %boldMagenta([%thread] %-5level) %blue(%logger{200} [%line]) %magenta(·⊱══>) %cyan(%msg%n)
+                <!--%date{yyyy-MM-dd HH:mm:ss.SSS} [traceId:%X{traceId}] [%thread] %-5level %logger{200} [%line] - %msg%n-->
+            </pattern>
+        </layout>
+    </appender>
+    <!--只保存info日志-->
+    <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>
+                %date{yyyy-MM-dd HH:mm:ss.SSS} [traceId:%X{traceId}] [%thread] %-5level %logger{200} [%line] - %msg%n
+            </pattern>
+        </encoder>
+        <!--滚动输出策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--路径-->
+            <fileNamePattern>../logs/casino-admin/info.%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+            <!--保存的时间（天数）-->
+            <maxHistory>30</maxHistory>
+            <!--日志文件的总大小-->
+            <totalSizeCap>50GB</totalSizeCap>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>200MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <!--只保存warn日志-->
+    <appender name="fileWarnLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder>
+            <pattern>
+                %date{yyyy-MM-dd HH:mm:ss.SSS} [traceId:%X{traceId}] [%thread] %-5level %logger{200} - %msg%n
+            </pattern>
+        </encoder>
+        <!--滚动输出策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--路径-->
+            <fileNamePattern>../logs/casino-admin/warn.%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+            <!--保存的时间（天数）-->
+            <maxHistory>30</maxHistory>
+            <!--日志文件的总大小-->
+            <totalSizeCap>10GB</totalSizeCap>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>200MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <!--只保存error日志-->
+    <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder>
+            <pattern>
+                %date{yyyy-MM-dd HH:mm:ss.SSS} [traceId:%X{traceId}] [%thread] %-5level %logger{200} - %msg%n
+            </pattern>
+        </encoder>
+        <!--滚动输出策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--路径-->
+            <fileNamePattern>../logs/casino-admin/error.%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>
+            <!--保存的时间（天数）-->
+            <maxHistory>30</maxHistory>
+            <!--日志文件的总大小-->
+            <totalSizeCap>10GB</totalSizeCap>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>200MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="consoleLog"/>
+        <appender-ref ref="fileInfoLog"/>
+        <appender-ref ref="fileWarnLog"/>
+        <appender-ref ref="fileErrorLog"/>
+    </root>
+
+</configuration>

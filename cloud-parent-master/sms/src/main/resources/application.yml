@@ -1,0 +1,33 @@
+server:
+  port: 9600
+
+spring:
+  security:
+    user:
+      name: jinsha
+      password: jinsha
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    #    url: jdbc:mysql://localhost:3306/casino?useUnicode=true&characterEncoding=utf-8
+    #    username: root
+    #    password: root
+    url: jdbc:mysql://127.0.0.1:3606/sms?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Mysql_123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      minimum-idle: 4
+      idle-timeout: 60000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      pool-name: DatebookHikariCP
+      maximum-pool-size: 16
+      connection-test-query: select 1
+

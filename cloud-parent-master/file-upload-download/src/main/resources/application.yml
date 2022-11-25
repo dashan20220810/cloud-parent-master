@@ -1,0 +1,9 @@
+server:
+  port: 9700
+
+minio:
+  endpoint: 8.214.118.39
+  port: 9000
+  accessKey: jsadmin
+  secretKey: jsadmin1
+  bucketName: js

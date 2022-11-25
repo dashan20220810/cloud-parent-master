@@ -1,0 +1,50 @@
+server:
+  port: 9400
+
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    url: jdbc:mysql://116.212.138.46:3606/casino?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Mysql_123
+    #    url: jdbc:mysql://154.204.57.237:3306/pay?useUnicode=true&characterEncoding=utf-8
+    #    username: root
+    #    password: aAbB1!2@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      minimum-idle: 4
+      idle-timeout: 60000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      pool-name: DatebookHikariCP
+      maximum-pool-size: 16
+      connection-test-query: select 1
+  redis:
+    database: 0
+    #    host: 154.204.57.237
+    host: 116.212.138.46
+    port: 8000
+    password: Redis_123P
+    timeout: 3000
+  rabbitmq:
+    host: 154.204.57.237 #ip
+    port: 5672      #端口
+    username: qd #账号
+    password: qd123 #密码
+    publisher-returns: true
+    virtual-host: qd
+    publisher-confirm-type: correlated
+    listener:
+      simple:
+        acknowledge-mode: manual
+    template:
+      mandatory: true
+project:
+  title: '千亿代理'

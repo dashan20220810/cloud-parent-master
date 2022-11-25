@@ -1,0 +1,1605 @@
+[
+  {
+    "descritpion": "会员相关数据",
+    "englishName": "Member",
+    "menuLevel": 1,
+    "name": "会员中心",
+    "url": "/memberCenter",
+    "children": [
+      {
+        "descritpion": "会员查询列表",
+        "englishName": "Member Management",
+        "menuLevel": 2,
+        "name": "会员管理",
+        "url": "/user/findUserList",
+        "children": [
+          {
+            "descritpion": "上分",
+            "englishName": "Top-Up",
+            "menuLevel": 3,
+            "name": "上分",
+            "url": "/user/saveChargeOrder"
+          },
+          {
+            "descritpion": "下分",
+            "englishName": "Withdraw",
+            "menuLevel": 3,
+            "name": "下分",
+            "url": "/user/saveWithdrawOrder"
+          },
+          {
+            "descritpion": "打码量清零",
+            "englishName": "Clean Mud",
+            "menuLevel": 3,
+            "name": "打码量清零",
+            "url": "/user/cleanMud"
+          },
+          {
+            "descritpion": "会员返利比例",
+            "englishName": "Rebate Configures the rebate ratio for members",
+            "menuLevel": 3,
+            "name": "会员返利比例",
+            "url": "/rebateUserConfiguration/findAll"
+          },
+          {
+            "descritpion": "保存",
+            "englishName": "Save",
+            "menuLevel": 3,
+            "name": "保存",
+            "url": "/rebateUserConfiguration/update"
+          },
+          {
+            "descritpion": "充值登录密码",
+            "englishName": "Reset Login Password",
+            "menuLevel": 3,
+            "name": "充值登录密码",
+            "url": "/user/resetPassword"
+          },
+          {
+            "descritpion": "重置提现密码",
+            "englishName": "Reset Withdrawal Password",
+            "menuLevel": 3,
+            "name": "重置提现密码",
+            "url": "/user/withdrawPassword"
+          },
+          {
+            "descritpion": "新增用户",
+            "englishName": "New Player",
+            "menuLevel": 3,
+            "name": "新增客户",
+            "url": "/user/saveUser"
+          },
+          {
+            "descritpion": "WM余额",
+            "englishName": "WM Balance",
+            "menuLevel": 3,
+            "name": "WM余额",
+            "url": "/user/refreshWM"
+          },
+          {
+            "descritpion": "用户禁用/启用",
+            "englishName": "Enable/Disable",
+            "menuLevel": 3,
+            "name": "用户禁用/启用",
+            "url": "/user/updateUserStatus"
+          },
+          {
+            "descritpion": "编辑客户",
+            "englishName": "Edit",
+            "menuLevel": 3,
+            "name": "编辑客户",
+            "url": "/user/updateUser"
+          },
+          {
+            "descritpion": "银行卡列表",
+            "englishName": "Bank Card List",
+            "menuLevel": 3,
+            "name": "银行卡列表",
+            "url": "/bankcard/boundList"
+          },
+          {
+            "descritpion": "绑定银行卡",
+            "englishName": "Select Bank Card",
+            "menuLevel": 3,
+            "name": "绑定银行卡",
+            "url": "/bankcard/bound"
+          },
+          {
+            "descritpion": "用户洗码查询",
+            "englishName": "Member Rolling Search",
+            "menuLevel": 3,
+            "name": "用户洗码查询",
+            "url": "/UserWashCodeConfig/findAll"
+          },
+          {
+            "descritpion": "编辑用户洗码设置",
+            "englishName": "Rolling Setting",
+            "menuLevel": 3,
+            "name": "编辑用户洗码设置",
+            "url": "/UserWashCodeConfig/updateWashCodeConfigs"
+          },
+          {
+            "descritpion": "WM资金明细",
+            "englishName": "WM History",
+            "menuLevel": 3,
+            "name": "WM资金明细",
+            "url": "/order/findOrderList"
+          },
+          {
+            "descritpion": "会员账变",
+            "englishName": "Member History",
+            "menuLevel": 3,
+            "name": "会员账变",
+            "url": "/accountChange/findAccountChangePage"
+          },
+          {
+            "descritpion": "充值流水",
+            "englishName": "Desposit Turnover",
+            "menuLevel": 3,
+            "name": "充值流水",
+            "url": "/rechargeTurnover/findPage"
+          },
+          {
+            "descritpion": "会员打码量",
+            "englishName": "Turnover",
+            "menuLevel": 3,
+            "name": "会员打码量",
+            "url": "/codeNumChange/findCodeNumChangeList"
+          },
+          {
+            "descritpion": "IP地址查询",
+            "englishName": "IP Address",
+            "menuLevel": 3,
+            "name": "IP地址",
+            "url": "/user/findIp"
+          },
+          {
+            "descritpion": "解绑银行卡",
+            "englishName": "Release",
+            "menuLevel": 3,
+            "name": "解绑",
+            "url": "/bankcard/disable"
+          },
+          {
+            "descritpion": "一键回收用户WM余额",
+            "englishName": "Restore All WM Balance",
+            "menuLevel": 3,
+            "name": "一键回收用户WM余额",
+            "url": "/user/oneKeyRecover"
+          },
+          {
+            "descritpion": "查询用户PG/CQ9余额",
+            "englishName": "PG/CQ9 Balance",
+            "menuLevel": 3,
+            "name": "查询用户PG/CQ9余额",
+            "url": "/user/refreshPGAndCQ9"
+          },
+          {
+            "descritpion": "一键回收用户PG/CQ9余额",
+            "englishName": "Restore All PG/CQ9 Balance",
+            "menuLevel": 3,
+            "name": "一键回收用户PG/CQ9余额",
+            "url": "/user/oneKeyRecoverApi"
+          },
+          {
+            "descritpion": "查询用户沙巴余额",
+            "englishName": "SABA Balance",
+            "menuLevel": 3,
+            "name": "查询用户沙巴余额",
+            "url": "/user/refreshSABA"
+          },
+          {
+            "descritpion": "一键回收用户沙巴余额",
+            "englishName": "Restore All SABA Balance",
+            "menuLevel": 3,
+            "name": "一键回收用户沙巴余额",
+            "url": "/user/recoverySABABalance"
+          },
+          {
+            "descritpion": "查询用户OB余额",
+            "englishName": "OB Balance",
+            "menuLevel": 3,
+            "name": "查询用户OB余额",
+            "url": "/user/refreshOB"
+          },
+          {
+            "descritpion": "一键回收用户OB余额",
+            "englishName": "Restore All OB Balance",
+            "menuLevel": 3,
+            "name": "一键回收用户OB余额",
+            "url": "/user/oneOBRecoverApi"
+          },
+          {
+            "descritpion": "查询用户OB体育余额",
+            "englishName": "OBTY Balance",
+            "menuLevel": 3,
+            "name": "查询用户OB体育余额",
+            "url": "/user/refreshOBTY"
+          },
+          {
+            "descritpion": "一键回收用户OB体育余额",
+            "englishName": "Restore All OBTY Balance",
+            "menuLevel": 3,
+            "name": "一键回收用户OB体育余额",
+            "url": "/user/oneOBTYRecoverApi"
+          },
+          {
+            "descritpion": "请求玩家再WM余额总余额",
+            "englishName": "WM total balance",
+            "menuLevel": 3,
+            "name": "请求玩家再WM余额总余额",
+            "url": "/user/getWMMoneyTotal"
+          },
+          {
+            "descritpion": "查询玩家PG/CQ9总余额",
+            "englishName": "Search PG/CQ9 player total balance",
+            "menuLevel": 3,
+            "name": "查询玩家PG/CQ9总余额",
+            "url": "/user/refreshPGTotal"
+          },
+          {
+            "descritpion": "查询玩家OBDJ总余额",
+            "englishName": "Search OBDJ player total balance",
+            "menuLevel": 3,
+            "name": "查询玩家OBDJ总余额",
+            "url": "/user/refreshOBDJTotal"
+          },
+          {
+            "descritpion": "查询玩家OBTY总余额",
+            "englishName": "Search OBTY player total balance",
+            "menuLevel": 3,
+            "name": "查询玩家OBTY总余额",
+            "url": "/user/refreshOBTYTotal"
+          },
+          {
+            "descritpion": "查询玩家沙巴总余额",
+            "englishName": "Search SABA player total balance",
+            "menuLevel": 3,
+            "name": "查询玩家沙巴总余额",
+            "url": "/user/refreshSABATotal"
+          },
+          {
+            "descritpion": "当前查询结果总计",
+            "englishName": "Total Of Current Query Results",
+            "menuLevel": 3,
+            "name": "当前查询结果总计",
+            "url": "/user/findUserTotal"
+          },
+          {
+            "descritpion": "解除银行卡实名认证",
+            "englishName": "Remove Real Name Authentication",
+            "menuLevel": 3,
+            "name": "解除银行卡实名认证",
+            "url": "/bankcard/unboundBankName"
+          },
+          {
+            "descritpion": "用户抽点配置表查询",
+            "englishName": "Search user commission setting list",
+            "menuLevel": 3,
+            "name": "用户抽点配置表查询",
+            "url": "/extractPointsConfig/user/findAll"
+          },
+          {
+            "descritpion": "更新用户抽点配置",
+            "englishName": "Update user commission setting",
+            "menuLevel": 3,
+            "name": "更新用户抽点配置",
+            "url": "/extractPointsConfig/user/update"
+          }
+        ]
+      },
+      {
+        "descritpion": "会员ip和地址查询",
+        "englishName": "Member Search",
+        "menuLevel": 2,
+        "name": "会员反查",
+        "url": "/userPegging/findUserPegging"
+      },
+      {
+        "descritpion": "三方账户查询",
+        "englishName": "Party Search",
+        "menuLevel": 2,
+        "name": "三方账户查询",
+        "url": "/userThird/findUserThird"
+      },
+      {
+        "descritpion": "查询人人代报表",
+        "englishName": "Member Report",
+        "menuLevel": 2,
+        "name": "查询人人代报表",
+        "url": "/proxyReport/find",
+        "children": [
+          {
+            "descritpion": "人人代下级明细",
+            "englishName": "Member Level Details",
+            "menuLevel": 3,
+            "name": "人人代下级明细",
+            "url": "/proxyReport/findDetail"
+          },
+          {
+            "descritpion": "人人代每日结算细节",
+            "englishName": "Member Statement Detail ",
+            "menuLevel": 3,
+            "name": "人人代每日结算细节",
+            "url": "/proxyReport/findDayDetail"
+          }
+        ]
+      },
+      {
+        "name": "测试",
+        "englishName": "test",
+        "descritpion": "测试初始化权限功能是否正常",
+        "menuLevel": 2,
+        "url": "/abc/test",
+        "delete": true,
+        "update": {
+          "descritpion": "测试初始化权限功能是否正常, delete 优先级最高delete=true时忽略update字段"
+        }
+      }
+    ]
+  },
+  {
+    "descritpion": "代理后台相关数据",
+    "englishName": "Agent Center",
+    "menuLevel": 1,
+    "name": "代理中心",
+    "url": "/agentCenter",
+    "children": [
+      {
+        "descritpion": "代理后台查询",
+        "englishName": "Agent Management",
+        "menuLevel": 2,
+        "name": "代理管理",
+        "url": "/proxyUser/findProxyUser",
+        "children": [
+          {
+            "descritpion": "重置密码",
+            "englishName": "Reset Password",
+            "menuLevel": 3,
+            "name": "重置密码",
+            "url": "/proxyUser/resetPasswords"
+          },
+          {
+            "descritpion": "新增代理",
+            "englishName": "Create (Main/Regional) agent",
+            "menuLevel": 3,
+            "name": "新增代理",
+            "url": "/proxyUser/saveProxyUser"
+          },
+          {
+            "descritpion": "锁定",
+            "englishName": "Lock",
+            "menuLevel": 3,
+            "name": "锁定",
+            "url": "/proxyUser/updateUserFlag"
+          },
+          {
+            "descritpion": "全局返佣配置",
+            "englishName": "Agent Commission Search",
+            "menuLevel": 3,
+            "name": "全局返佣配置",
+            "url": "/proxyRebateConfig/findAll"
+          },
+          {
+            "descritpion": "直属下级玩家查询",
+            "englishName": "Subordinate Search",
+            "menuLevel": 3,
+            "name": "直属下级玩家查询",
+            "url": "/proxyUser/findUsersNum"
+          },
+          {
+            "descritpion": "个人返佣设置",
+            "englishName": "Agent Commission Setting",
+            "menuLevel": 3,
+            "name": "个人返佣设置",
+            "url": "/proxyRebateConfig/updateProxyRebate"
+          },
+          {
+            "descritpion": "转移会员",
+            "englishName": "Transfer Member",
+            "menuLevel": 3,
+            "name": "转移会员",
+            "url": "/proxyUser/transferUser"
+          },
+          {
+            "descritpion": "转移代理",
+            "englishName": "Transfer agent",
+            "menuLevel": 3,
+            "name": "转移代理",
+            "url": "/proxyUser/transferProxy"
+          },
+          {
+            "descritpion": "转移代理向上",
+            "englishName": "Transfer agent up",
+            "menuLevel": 3,
+            "name": "转移代理向上",
+            "url": "/proxyUser/transferProxyUp"
+          },
+          {
+            "descritpion": "删除",
+            "englishName": "Delete",
+            "menuLevel": 3,
+            "name": "删除",
+            "url": "/proxyUser/delete"
+          },
+          {
+            "descritpion": "代理抽点配置表查询",
+            "englishName": "Search agent commission setting list",
+            "menuLevel": 3,
+            "name": "代理抽点配置表查询",
+            "url": "/extractPointsConfig/poxy/findAll"
+          },
+          {
+            "descritpion": "更新基础代代理抽点配置",
+            "englishName": "Update basic agent commission setting",
+            "menuLevel": 3,
+            "name": "更新基础代代理抽点配置",
+            "url": "/extractPointsConfig/poxy/update"
+          },
+          {
+            "descritpion": "基层代理返利比例",
+            "englishName": "Agent rebate ratio",
+            "menuLevel": 3,
+            "name": "基层代理返利比例",
+            "url": "/rebateProxyConfiguration/findAll"
+          },
+          {
+            "descritpion": "保存",
+            "englishName": "Save",
+            "menuLevel": 3,
+            "name": "保存",
+            "url": "/rebateProxyConfiguration/update"
+          }
+        ]
+      },
+      {
+        "descritpion": "代理后台日报表",
+        "englishName": "All Report",
+        "menuLevel": 2,
+        "name": "综合报表",
+        "url": "/companyProxyDetail/find",
+        "children": [
+          {
+            "descritpion": "代理报表统计",
+            "englishName": "Daily Agent Overview",
+            "menuLevel": 3,
+            "name": "代理日报表统计",
+            "url": "/companyProxyDetail/findSum"
+          },
+          {
+            "descritpion": "每日结算细节",
+            "englishName": "Details",
+            "menuLevel": 3,
+            "name": "每日结算细节",
+            "url": "/companyProxyDetail/findDailyDetails"
+          },
+          {
+            "descritpion": "统计每日结算细节",
+            "englishName": "The statistical details",
+            "menuLevel": 3,
+            "name": "统计每日结算细节",
+            "url": "/companyProxyDetail/findDailyDetailsSum"
+          }
+        ]
+      },
+      {
+        "descritpion": "代理后台月报表",
+        "englishName": "Commission Report",
+        "menuLevel": 2,
+        "name": "佣金月结报表",
+        "url": "/companyProxyMonth/find",
+        "children": [
+          {
+            "descritpion": "代理月报表统计",
+            "englishName": "Monthly Agent Overview",
+            "menuLevel": 3,
+            "name": "代理月报表统计",
+            "url": "/companyProxyDetail/findSum"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "descritpion": "游戏注单相关数据",
+    "englishName": "Order Details",
+    "menuLevel": 1,
+    "name": "订单中心",
+    "url": "/orderCenter",
+    "children": [
+      {
+        "descritpion": "充值记录",
+        "englishName": "Deposit History",
+        "menuLevel": 2,
+        "name": "充值记录",
+        "url": "/chargeOrder/chargeOrderList",
+        "children": [
+          {
+            "descritpion": "充值审核",
+            "englishName": "Audit",
+            "menuLevel": 3,
+            "name": "充值审核",
+            "url": "/chargeOrder/updateChargeOrder"
+          },
+          {
+            "descritpion": "修改充值备注",
+            "englishName": "Modify recharge remarks",
+            "menuLevel": 3,
+            "name": "修改充值备注",
+            "url": "/chargeOrder/updateChargeOrdersRemark"
+          }
+        ]
+      },
+      {
+        "descritpion": "提现记录",
+        "englishName": "Withdrawal History",
+        "menuLevel": 2,
+        "name": "提现记录",
+        "url": "/withdraw/withdrawList",
+        "children": [
+          {
+            "descritpion": "提现审核",
+            "englishName": "Audit",
+            "menuLevel": 3,
+            "name": "提现审核",
+            "url": "/withdraw/saveWithdraw"
+          },
+          {
+            "descritpion": "修改提现备注",
+            "englishName": "Modify withdrawal remarks",
+            "menuLevel": 3,
+            "name": "修改提现备注",
+            "url": "/withdraw/updateWithdrawOrderRemark"
+          }
+        ]
+      },
+      {
+        "descritpion": "财务出款",
+        "englishName": "Financial out money",
+        "menuLevel": 2,
+        "name": "财务出款",
+        "url": "/withdrawPay/findPage",
+        "children": [
+          {
+            "descritpion": "出款审核",
+            "englishName": "Audit",
+            "menuLevel": 3,
+            "name": "出款审核",
+            "url": "/withdrawPay/pay"
+          }
+        ]
+      },
+      {
+        "descritpion": "风控审核",
+        "englishName": "Withdrawal History",
+        "menuLevel": 2,
+        "name": "风控审核",
+        "url": "/withdrawAudit/findPage",
+        "children": [
+          {
+            "descritpion": "风控审核",
+            "englishName": "Audit",
+            "menuLevel": 3,
+            "name": "风控审核",
+            "url": "/withdrawAudit/audit"
+          }
+        ]
+      },
+      {
+        "descritpion": "异常订单",
+        "englishName": "Abnormal order",
+        "menuLevel": 2,
+        "name": "异常订单列表",
+        "url": "/aErrorOrder/errorOrderList",
+        "children": [
+          {
+            "descritpion": "通过",
+            "englishName": "adopt",
+            "menuLevel": 3,
+            "name": "通过",
+            "url": "/aErrorOrder/updateErrorOrdersStatus"
+          },
+          {
+            "descritpion": "拒绝",
+            "englishName": "refuse",
+            "menuLevel": 3,
+            "name": "拒绝",
+            "url": "/aErrorOrder/updateErrorOrdersStatus"
+          },
+          {
+            "descritpion": "通过上分",
+            "englishName": "Pass the upper score",
+            "menuLevel": 3,
+            "name": "通过上分",
+            "url": "/aErrorOrder/updateErrorOrdersStatus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "descritpion": "财务数据",
+    "englishName": "Cashier",
+    "menuLevel": 1,
+    "name": "财务中心",
+    "url": "/financeCenter",
+    "children": [
+      {
+        "descritpion": "银行渠道设置",
+        "englishName": "Bank Card Setting",
+        "menuLevel": 2,
+        "name": "银行渠道设置",
+        "url": "/bankcard/banklist",
+        "children": [
+          {
+            "descritpion": "禁用/启用",
+            "englishName": "Enable/Disable",
+            "menuLevel": 3,
+            "name": "禁用/启用",
+            "url": "/bankcard/updateBankStatus"
+          },
+          {
+            "descritpion": "编辑",
+            "englishName": "Edit",
+            "menuLevel": 3,
+            "name": "编辑",
+            "url": "/bankcard/updateBankInfo"
+          }
+        ]
+      },
+      {
+        "descritpion": "收款银行卡设置",
+        "englishName": "Receiver Bank Card Setting",
+        "menuLevel": 2,
+        "name": "收款银行卡设置",
+        "url": "/collection/bankList",
+        "children": [
+          {
+            "descritpion": "银行渠道列表",
+            "englishName": "List of Bank",
+            "menuLevel": 3,
+            "name": "银行渠道列表",
+            "url": "/bankcard/banklist"
+          },
+          {
+            "descritpion": "上架",
+            "englishName": "Upload",
+            "menuLevel": 3,
+            "name": "上架",
+            "url": "/collection/updateDisable"
+          },
+          {
+            "descritpion": "删除",
+            "englishName": "Delete",
+            "menuLevel": 3,
+            "name": "删除",
+            "url": "/collection/deleteBankInfo"
+          },
+          {
+            "descritpion": "新增",
+            "englishName": "New",
+            "menuLevel": 3,
+            "name": "新增",
+            "url": "/collection/saveBankInfo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "descritpion": "运营相关数据",
+    "englishName": "Operation",
+    "menuLevel": 1,
+    "name": "运营中心",
+    "url": "/operateCenter",
+    "children": [
+      {
+        "descritpion": "平台配置",
+        "englishName": "Platform Setting",
+        "menuLevel": 2,
+        "name": "平台配置",
+        "url": "/chargeConfig/findChargeConfig",
+        "children": [
+          {
+            "descritpion": "修改人人代直属下级最大个数",
+            "englishName": "Maximum Subordinate Per- Account Setting",
+            "menuLevel": 3,
+            "name": "修改人人代直属下级最大个数",
+            "url": "/platformConfig/updateDirectly"
+          },
+          {
+            "descritpion": "查询人人代直属下级最大个数",
+            "englishName": "Maximum Subordinate Per- Account Search",
+            "menuLevel": 3,
+            "name": "查询人人代直属下级最大个数",
+            "url": "/platformConfig/findDirectly"
+          },
+          {
+            "descritpion": "编辑短信余额风险警戒线",
+            "englishName": "SMS Balance",
+            "menuLevel": 3,
+            "name": "编辑短信余额风险警戒线",
+            "url": "/platformConfig/updateMessageBalance"
+          },
+          {
+            "descritpion": "提款配置查询",
+            "englishName": "Withdrawal Search",
+            "menuLevel": 3,
+            "name": "提款配置查询",
+            "url": "/withdrawConfig/findWithdrawConfig"
+          },
+          {
+            "descritpion": "充值配置修改",
+            "englishName": "Deposit Setting",
+            "menuLevel": 3,
+            "name": "充值配置修改",
+            "url": "/chargeConfig/saveChargeConfig"
+          },
+          {
+            "descritpion": "提现配置修改",
+            "englishName": "Withdrawal Setting",
+            "menuLevel": 3,
+            "name": "提现配置修改",
+            "url": "/withdrawConfig/saveWithdrawConfig"
+          },
+          {
+            "descritpion": "打码倍率查询",
+            "englishName": "Platform Turnover Search",
+            "menuLevel": 3,
+            "name": "打码倍率查询",
+            "url": "/betRatioConfig/findAll"
+          },
+          {
+            "descritpion": "打码倍率编辑",
+            "englishName": "Platform Turnover Setting",
+            "menuLevel": 3,
+            "name": "打码倍率编辑",
+            "url": "/betRatioConfig/update"
+          },
+          {
+            "descritpion": "推广配置查询",
+            "englishName": "Player Commission Search",
+            "menuLevel": 3,
+            "name": "推广配置查询",
+            "url": "/platformConfig/findCommission"
+          },
+          {
+            "descritpion": "推广配置编辑",
+            "englishName": "Player Commission Setting",
+            "menuLevel": 3,
+            "name": "推广配置编辑",
+            "url": "/platformConfig/updateCommission"
+          },
+          {
+            "descritpion": "注册开关查询",
+            "englishName": "Register Button Search",
+            "menuLevel": 3,
+            "name": "注册开关查询",
+            "url": "/platformConfig/findRegisterSwitch"
+          },
+          {
+            "descritpion": "注册开关编辑",
+            "englishName": "Register Button Setting",
+            "menuLevel": 3,
+            "name": "注册开关编辑",
+            "url": "/platformConfig/updateRegisterSwitch"
+          },
+          {
+            "descritpion": "平台风险配置",
+            "englishName": "Risk Setting",
+            "menuLevel": 3,
+            "name": "平台风险配置",
+            "url": "/managementRisk/findRiskConfig"
+          },
+          {
+            "descritpion": "平台风险编辑",
+            "englishName": "Risk Edit",
+            "menuLevel": 3,
+            "name": "平台风险编辑",
+            "url": "/managementRisk/saveRiskConfig"
+          },
+          {
+            "descritpion": "logo图查询(PC)",
+            "englishName": "Logo Search(PC)",
+            "menuLevel": 3,
+            "name": "logo图查询(PC)",
+            "url": "/platformConfig/findLogoPicturePc"
+          },
+          {
+            "descritpion": "编辑logo图(PC)",
+            "englishName": "Logo Setting(PC)",
+            "menuLevel": 3,
+            "name": "编辑logo图(PC)",
+            "url": "/platformConfig/saveLogoPicturePc"
+          },
+          {
+            "descritpion": "网站icon查看",
+            "englishName": "Web Icon Search",
+            "menuLevel": 3,
+            "name": "网站icon查看",
+            "url": "/platformConfig/findWebsiteIcon"
+          },
+          {
+            "descritpion": "编辑网站icon",
+            "englishName": "Web Icon Setting",
+            "menuLevel": 3,
+            "name": "编辑网站icon",
+            "url": "/platformConfig/saveWebsiteIcon"
+          },
+          {
+            "descritpion": "logo图查询",
+            "englishName": "Logo Search",
+            "menuLevel": 3,
+            "name": "logo图查询",
+            "url": "/platformConfig/findLogoPictureApp"
+          },
+          {
+            "descritpion": "编辑logo图",
+            "englishName": "Logo Setting",
+            "menuLevel": 3,
+            "name": "编辑logo图",
+            "url": "/platformConfig/savePCPictureApp"
+          },
+          {
+            "descritpion": "推广链接查询",
+            "englishName": "Referral Code Search",
+            "menuLevel": 3,
+            "name": "推广链接查询",
+            "url": "/platformConfig/findPromotionCode"
+          },
+          {
+            "descritpion": "修改推广链接码",
+            "englishName": "Referral Code Setting",
+            "menuLevel": 3,
+            "name": "修改推广链接码",
+            "url": "/platformConfig/updatePromotionCode"
+          },
+          {
+            "descritpion": "logo图查询APP",
+            "englishName": "APP Logo Search(APP)",
+            "menuLevel": 3,
+            "name": "logo图查询APP",
+            "url": "/platformConfig/findLoginRegisterLogoPictureApp"
+          },
+          {
+            "descritpion": "编辑logo图APP",
+            "englishName": "APP Logo Setting(APP)",
+            "menuLevel": 3,
+            "name": "编辑logo图APP",
+            "url": "/platformConfig/saveLoginRegisterLogoPictureApp"
+          },
+          {
+            "descritpion": "查询人人代开关",
+            "englishName": "Enable Member Search",
+            "menuLevel": 3,
+            "name": "查询人人代开关",
+            "url": "/platformConfig/findPeopleProxySwitch"
+          },
+          {
+            "descritpion": "编辑人人代开关",
+            "englishName": "Enable Member Edit",
+            "menuLevel": 3,
+            "name": "编辑人人代开关",
+            "url": "/platformConfig/updatePeopleProxySwitch"
+          },
+          {
+            "descritpion": "查询验证码开关",
+            "englishName": "Query verification code switch",
+            "menuLevel": 3,
+            "name": "查询验证码开关",
+            "url": "/platformConfig/findVerificationCode"
+          },
+          {
+            "descritpion": "编辑验证码开关",
+            "englishName": "Edit verification code switch",
+            "menuLevel": 3,
+            "name": "编辑验证码开关",
+            "url": "/platformConfig/updateVerificationCode"
+          },
+          {
+            "descritpion": "查询银行卡账号校验开关",
+            "englishName": "Enable bank card verification",
+            "menuLevel": 3,
+            "name": "查询银行卡账号校验开关",
+            "url": "/platformConfig/findBankcardRealNameSwitch"
+          },
+          {
+            "descritpion": "编辑银行卡账号校验开关",
+            "englishName": "Enable edit bank card verification",
+            "menuLevel": 3,
+            "name": "编辑银行卡账号校验开关",
+            "url": "/platformConfig/updateBankcardRealNameSwitch"
+          },
+          {
+            "descritpion": "查询平台维护开关",
+            "englishName": "Inquire platform maintenance switch",
+            "menuLevel": 3,
+            "name": "查询平台维护开关",
+            "url": "/platformConfig/findPlatformMaintenance"
+          },
+          {
+            "descritpion": "修改平台维护开关",
+            "englishName": "Modify platform maintenance switch",
+            "menuLevel": 3,
+            "name": "修改平台维护开关",
+            "url": "/platformConfig/updatePlatformMaintenance"
+          }
+        ]
+      },
+      {
+        "descritpion": "代理推广返佣配置",
+        "englishName": "Agent Commission Setting",
+        "menuLevel": 2,
+        "name": "代理推广返佣配置",
+        "url": "/proxyRebate/findAll",
+        "children": [
+          {
+            "descritpion": "保存",
+            "englishName": "Save",
+            "menuLevel": 3,
+            "name": "保存",
+            "url": "/proxyRebate/updateProxyRebate"
+          }
+        ]
+      },
+      {
+        "descritpion": "用户设备记录",
+        "englishName": "Accessing the Device List",
+        "menuLevel": 2,
+        "name": "用户设备记录",
+        "url": "/visitsDevice/findPage"
+      },
+      {
+        "descritpion": "补三方注单",
+        "englishName": "Pull Game History",
+        "menuLevel": 2,
+        "name": "补三方注单",
+        "url": "/rePullGameRecord/pullGameRecordDate"
+      },
+      {
+        "descritpion": "PC端轮播图配置",
+        "englishName": "PC Cover Edit",
+        "menuLevel": 2,
+        "name": "PC端轮播图配置",
+        "url": "/picture/findByBannerList",
+        "children": [
+          {
+            "descritpion": "编辑轮播图",
+            "englishName": "PC Cover Edit",
+            "menuLevel": 3,
+            "name": "编辑PC轮播图",
+            "url": "/picture/savePCPicture"
+          }
+        ]
+      },
+      {
+        "descritpion": "全局获取返利比例",
+        "englishName": "Gets the percentage of wash code points",
+        "menuLevel": 2,
+        "name": "全局获取返利比例",
+        "url": "/rebateConfiguration/findAll",
+        "children": [
+          {
+            "descritpion": "保存",
+            "englishName": "Save",
+            "menuLevel": 3,
+            "name": "保存",
+            "url": "/rebateConfiguration/update"
+          }
+        ]
+      },
+      {
+        "descritpion": "移动端轮播图配置",
+        "englishName": "Phone Cover Edit",
+        "menuLevel": 2,
+        "name": "移动端轮播图配置",
+        "url": "/picture/findByBannerListYD",
+        "children": [
+          {
+            "descritpion": "编辑轮播图",
+            "englishName": "Phone Cover Edit",
+            "menuLevel": 3,
+            "name": "编辑移动端轮播图",
+            "url": "/picture/saveAppPicture"
+          },
+          {
+            "descritpion": "移动端轮播图配置",
+            "englishName": "Cover Search",
+            "menuLevel": 2,
+            "name": "轮播图查询",
+            "url": "/picture/findByBannerList"
+          }
+        ]
+      },
+      {
+        "descritpion": "公告消息配置",
+        "englishName": "Announcement Setting",
+        "menuLevel": 2,
+        "name": "公告消息配置",
+        "url": "/notice/findNotice",
+        "children": [
+          {
+            "descritpion": "上下架",
+            "englishName": "Delete",
+            "menuLevel": 3,
+            "name": "上下架",
+            "url": "/notice/deleteNotice"
+          },
+          {
+            "descritpion": "编辑",
+            "englishName": "Edit",
+            "menuLevel": 3,
+            "name": "编辑",
+            "url": "/notice/updateNotice"
+          },
+          {
+            "descritpion": "新增",
+            "englishName": "New",
+            "menuLevel": 3,
+            "name": "新增",
+            "url": "/notice/saveNotice"
+          },
+          {
+            "descritpion": "删除公告",
+            "englishName": "Delete Announcement",
+            "menuLevel": 3,
+            "name": "删除公告",
+            "url": "/notice/delNotice"
+          }
+        ]
+      },
+      {
+        "descritpion": "游戏洗码配置",
+        "englishName": "Rolling Setting",
+        "menuLevel": 2,
+        "name": "游戏洗码配置",
+        "url": "/washCodeConfig/findAll",
+        "children": [
+          {
+            "descritpion": "编辑",
+            "englishName": "Edit",
+            "menuLevel": 3,
+            "name": "编辑",
+            "url": "/washCodeConfig/updateWashCodeConfigs"
+          }
+        ]
+      },
+      {
+        "descritpion": "IP黑名单管理",
+        "englishName": "IP blacklist",
+        "menuLevel": 2,
+        "name": "IP黑名单管理",
+        "url": "/ipBlack/findIpBlackPag",
+        "children": [
+          {
+            "descritpion": "删除",
+            "englishName": "Delete",
+            "menuLevel": 3,
+            "name": "删除",
+            "url": "/ipBlack/disable"
+          }
+        ]
+      },
+      {
+        "descritpion": "官方推广",
+        "englishName": "Promotion",
+        "menuLevel": 2,
+        "name": "官方推广",
+        "url": "/expand/getChainedAddress"
+      },
+      {
+        "descritpion": "客服中心配置",
+        "englishName": "Customer Service Setting",
+        "menuLevel": 2,
+        "name": "客服中心配置",
+        "url": "/customer/findCustomerList",
+        "children": [
+          {
+            "descritpion": "保存",
+            "englishName": "Save",
+            "menuLevel": 3,
+            "name": "保存",
+            "url": "/customer/updateKeyCustomerConfigure"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "descritpion": "报表统计相关数据",
+    "englishName": "Manage Report",
+    "menuLevel": 1,
+    "name": "报表管理",
+    "url": "/reportCenter",
+    "children": [
+      {
+        "descritpion": "第三方资金明细",
+        "englishName": "Details of third-party Funds",
+        "menuLevel": 2,
+        "name": "第三方资金明细",
+        "url": "/order/findOrderList"
+      },
+      {
+        "descritpion": "会员账变",
+        "englishName": "Member History",
+        "menuLevel": 2,
+        "name": "会员账变",
+        "url": "/accountChange/findAccountChangePage"
+      },
+      {
+        "descritpion": "充值订单流水",
+        "englishName": "Desposit Turnover",
+        "menuLevel": 2,
+        "name": "充值订单流水",
+        "url": "/rechargeTurnover/findPage"
+      },
+      {
+        "descritpion": "第三方游戏注单",
+        "englishName": "Party Bets",
+        "menuLevel": 2,
+        "name": "第三方游戏注单",
+        "url": "/gameRecord/findGameRecordPage"
+      },
+      {
+        "descritpion": "会员总报表",
+        "englishName": "Pofit Report",
+        "menuLevel": 2,
+        "name": "会员总报表",
+        "url": "/report/queryPersonReport",
+        "children": [
+          {
+            "descritpion": "盈亏报表总计",
+            "englishName": "Total Profit",
+            "menuLevel": 3,
+            "name": "盈亏报表总计",
+            "url": "/report/queryTotal"
+          }
+        ]
+      },
+      {
+        "descritpion": "会员返利报表",
+        "englishName": "Member rebate statement",
+        "menuLevel": 2,
+        "name": "会员返利报表",
+        "url": "/rebateReport/queryPersonReport",
+        "children": [
+          {
+            "descritpion": "盈亏报表总计",
+            "englishName": "Total Profit",
+            "menuLevel": 3,
+            "name": "盈亏报表总计",
+            "url": "/rebateReport/queryTotal"
+          }
+        ]
+      },
+      {
+        "descritpion": "代理对账报表",
+        "englishName": "Agent Report",
+        "menuLevel": 2,
+        "name": "代理对账报表",
+        "url": "/inTimeReport/find"
+      },
+      {
+        "descritpion": "普通会员报表",
+        "englishName": "Common Member Report",
+        "menuLevel": 2,
+        "name": "普通会员报表",
+        "url": "/companyReport/find"
+      }
+    ]
+  },
+  {
+    "descritpion": "系统管理相关数据",
+    "englishName": "System Setting",
+    "menuLevel": 1,
+    "name": "系统管理",
+    "url": "/systemCenter",
+    "children": [
+      {
+        "descritpion": "用户登录日志",
+        "englishName": "Login History",
+        "menuLevel": 2,
+        "name": "用户登录日志",
+        "url": "/loginLog/findLoginLogPage"
+      },
+      {
+        "descritpion": "APP升级管理",
+        "englishName": "APP Update Setting",
+        "menuLevel": 2,
+        "name": "APP升级管理",
+        "url": "/download/findDownloadStationPage",
+        "children": [
+          {
+            "descritpion": "保存",
+            "englishName": "Save",
+            "menuLevel": 3,
+            "name": "保存",
+            "url": "/download/saveDownloadStation"
+          }
+        ]
+      },
+      {
+        "descritpion": "用户列表",
+        "englishName": "User List",
+        "menuLevel": 2,
+        "name": "用户列表",
+        "url": "/sysUser/userList",
+        "children": [
+          {
+            "descritpion": "绑定用户角色",
+            "englishName": "User Role",
+            "menuLevel": 3,
+            "name": "绑定用户角色",
+            "url": "/role/getUserRoleBind"
+          },
+          {
+            "descritpion": "查询用户数据",
+            "englishName": "Data Search",
+            "menuLevel": 3,
+            "name": "查询用户数据",
+            "url": "/role/getSysUser"
+          },
+          {
+            "descritpion": "删除角色",
+            "englishName": "Delete Role",
+            "menuLevel": 3,
+            "name": "删除角色",
+            "url": "/role/deleteRoleList"
+          },
+          {
+            "descritpion": "重置用户密码",
+            "englishName": "Reset Password",
+            "menuLevel": 3,
+            "name": "重置用户密码",
+            "url": "/login/resetPassword"
+          },
+          {
+            "descritpion": "重置谷歌验证码",
+            "englishName": "Reset Google Authenticator",
+            "menuLevel": 3,
+            "name": "重置谷歌验证码",
+            "url": "/login/resetGaKey"
+          },
+          {
+            "descritpion": "查询会员流水报表",
+            "englishName": "Turnover Report",
+            "menuLevel": 3,
+            "name": "查询会员流水报表",
+            "url": "/userRunningWater/find"
+          },
+          {
+            "descritpion": "新增用户",
+            "englishName": "New User",
+            "menuLevel": 3,
+            "name": "新增用户",
+            "url": "/login/save"
+          }
+        ]
+      },
+      {
+        "descritpion": "角色列表",
+        "englishName": "Role List",
+        "menuLevel": 2,
+        "name": "角色列表",
+        "url": "/sysUser/roleList",
+        "children": [
+          {
+            "descritpion": "权限查询",
+            "englishName": "Authority Search",
+            "menuLevel": 3,
+            "name": "权限查询",
+            "url": "/role/findPermissionList"
+          },
+          {
+            "descritpion": "编辑权限",
+            "englishName": "Edit Permission",
+            "menuLevel": 3,
+            "name": "编辑权限",
+            "url": "/role/updatePermissionList"
+          },
+          {
+            "descritpion": "查询角色数据",
+            "englishName": "Role Search",
+            "menuLevel": 3,
+            "name": "查询角色数据",
+            "url": "/role/getRoleList"
+          }
+        ]
+      },
+      {
+        "descritpion": "系统配置",
+        "englishName": "System Setting",
+        "menuLevel": 2,
+        "name": "系统配置",
+        "url": "/systemMessage/systemConfig",
+        "children": [
+          {
+            "descritpion": "域名配置查询",
+            "englishName": "Domain Search",
+            "menuLevel": 3,
+            "name": "域名配置查询",
+            "url": "/platformConfig/findDomainName"
+          },
+          {
+            "descritpion": "域名配置编辑",
+            "englishName": "Domain Setting",
+            "menuLevel": 3,
+            "name": "域名配置编辑",
+            "url": "/platformConfig/updateDomainName"
+          },
+          {
+            "descritpion": "金钱符号查询",
+            "englishName": "Currency Search",
+            "menuLevel": 3,
+            "name": "金钱符号查询",
+            "url": "/platformConfig/findMoneySymbol"
+          },
+          {
+            "descritpion": "编辑金钱符号",
+            "englishName": "Currency Edit",
+            "menuLevel": 3,
+            "name": "编辑金钱符号",
+            "url": "/platformConfig/updateMoneySymbol"
+          },
+          {
+            "descritpion": "修改Web网站域名",
+            "englishName": "Domain Setting",
+            "menuLevel": 3,
+            "name": "修改Web网站域名",
+            "url": "/platformConfig/updateWebConfiguration"
+          },
+          {
+            "descritpion": "查询Web网站域名",
+            "englishName": "Domain Setting",
+            "menuLevel": 3,
+            "name": "查询Web网站域名",
+            "url": "/platformConfig/findWebConfiguration"
+          },
+          {
+            "descritpion": "查询客服脚本的代号",
+            "englishName": "Customer Service Search",
+            "menuLevel": 3,
+            "name": "查询客服脚本的代号",
+            "url": "/platformConfig/findCustomerCode"
+          },
+          {
+            "descritpion": "修改客服脚本的代号",
+            "englishName": "Customer Service Setting",
+            "menuLevel": 3,
+            "name": "修改客服脚本的代号",
+            "url": "/platformConfig/updateCustomerCode"
+          },
+          {
+            "descritpion": "图片服务器地址查询",
+            "englishName": "Image Link",
+            "menuLevel": 3,
+            "name": "图片服务器地址查询",
+            "url": "/platformConfig/findUploadUrl"
+          },
+          {
+            "descritpion": "修改图片服务器地址",
+            "englishName": "Image Setting",
+            "menuLevel": 3,
+            "name": "修改图片服务器地址",
+            "url": "/platformConfig/updateUploadUrl"
+          },
+          {
+            "descritpion": "访问图片地址配置查询",
+            "englishName": "Image Server Address",
+            "menuLevel": 3,
+            "name": "访问图片地址配置查询",
+            "url": "/platformConfig/findReadUploadUrl"
+          },
+          {
+            "descritpion": "修改访问图片服务器地址",
+            "englishName": "Image Server Address Setting",
+            "menuLevel": 3,
+            "name": "修改访问图片服务器地址",
+            "url": "/platformConfig/updateReadUploadUrl"
+          }
+        ]
+      },
+      {
+        "descritpion": "域名管理",
+        "englishName": "Did the game modify",
+        "menuLevel": 2,
+        "name": "域名管理",
+        "url": "/domain/findList",
+        "children": [
+          {
+            "descritpion": "新增或者修改域名",
+            "englishName": "Add or update domain",
+            "menuLevel": 3,
+            "name": "新增或者修改域名",
+            "url": "/domain/saveDomain"
+          },
+          {
+            "descritpion": "修改域名状态",
+            "englishName": "Modify domain name status",
+            "menuLevel": 3,
+            "name": "修改域名状态",
+            "url": "/domain/domainStatus"
+          },
+          {
+            "descritpion": "删除域名",
+            "englishName": "Delete domain",
+            "menuLevel": 3,
+            "name": "删除域名",
+            "url": "/domain/deleteId"
+          },
+          {
+            "descritpion": "会员列表",
+            "englishName": "User List",
+            "menuLevel": 3,
+            "name": "会员列表",
+            "url": "/domain/findUser"
+          },
+          {
+            "descritpion": "域名访问量统计",
+            "englishName": "Domain name visitor statistic",
+            "menuLevel": 3,
+            "name": "域名访问量统计",
+            "url": "/domain/visitsFindList"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "descritpion": "第三方游戏管理",
+    "englishName": "Third party game management",
+    "menuLevel": 1,
+    "name": "第三方游戏管理",
+    "url": "/thirdGameMange",
+    "children": [
+      {
+        "descritpion": "PG电子游戏管理",
+        "englishName": "PG game management",
+        "menuLevel": 2,
+        "name": "PG电子游戏管理",
+        "url": "/adGame/platformListPG",
+        "children": [
+          {
+            "descritpion": "游戏列表",
+            "englishName": "Game listing",
+            "menuLevel": 3,
+            "name": "PG游戏列表",
+            "url": "/adGame/findGameList"
+          },
+          {
+            "descritpion": "平台是否维护",
+            "englishName": "Platform under maintenance",
+            "menuLevel": 3,
+            "name": "PG平台是否维护",
+            "url": "/adGame/updatePlatformStatus"
+          },
+          {
+            "descritpion": "游戏状态修改",
+            "englishName": "Did the game modify",
+            "menuLevel": 3,
+            "name": "PG游戏状态修改",
+            "url": "/adGame/updateDomainName"
+          }
+        ]
+      },      {
+        "descritpion": "OB游戏管理",
+        "englishName": "OB game management",
+        "menuLevel": 2,
+        "name": "OB电子游戏管理",
+        "url": "/adGame/platformListOB",
+        "children": [
+          {
+            "descritpion": "游戏列表",
+            "englishName": "Game listing",
+            "menuLevel": 3,
+            "name": "OB游戏列表",
+            "url": "/adGame/findGameList"
+          },
+          {
+            "descritpion": "平台是否维护",
+            "englishName": "Platform under maintenance",
+            "menuLevel": 3,
+            "name": "OB平台是否维护",
+            "url": "/adGame/updatePlatformStatus"
+          },
+          {
+            "descritpion": "游戏状态修改",
+            "englishName": "Did the game modify",
+            "menuLevel": 3,
+            "name": "OB游戏状态修改",
+            "url": "/adGame/updateDomainName"
+          }
+        ]
+      },{
+        "descritpion": "SBTY游戏管理",
+        "englishName": "SBTY game management",
+        "menuLevel": 2,
+        "name": "沙巴体育游戏管理",
+        "url": "/adGame/platformListSBTY",
+        "children": [
+          {
+            "descritpion": "游戏列表",
+            "englishName": "Game listing",
+            "menuLevel": 3,
+            "name": "SBTY游戏列表",
+            "url": "/adGame/findGameList"
+          },
+          {
+            "descritpion": "平台是否维护",
+            "englishName": "Platform under maintenance",
+            "menuLevel": 3,
+            "name": "SBTY平台是否维护",
+            "url": "/adGame/updatePlatformStatus"
+          },
+          {
+            "descritpion": "游戏状态修改",
+            "englishName": "Did the game modify",
+            "menuLevel": 3,
+            "name": "SBTY游戏状态修改",
+            "url": "/adGame/updateDomainName"
+          }
+        ]
+      },
+      {
+        "descritpion": "CQ9电子游戏管理",
+        "englishName": "CQ9 game management",
+        "menuLevel": 2,
+        "name": "CQ9电子游戏管理",
+        "url": "/adGame/platformListCQ9",
+        "children": [
+          {
+            "descritpion": "游戏列表",
+            "englishName": "Game listing",
+            "menuLevel": 3,
+            "name": "CQ9游戏列表",
+            "url": "/adGame/findGameList"
+          },
+          {
+            "descritpion": "平台是否维护",
+            "englishName": "Platform under maintenance",
+            "menuLevel": 3,
+            "name": "CQ9平台是否维护",
+            "url": "/adGame/updatePlatformStatus"
+          },
+          {
+            "descritpion": "游戏状态修改",
+            "englishName": "Did the game modify",
+            "menuLevel": 3,
+            "name": "CQ9游戏状态修改",
+            "url": "/adGame/updateDomainName"
+          }
+        ]
+      },
+      {
+        "descritpion": "WM电子游戏管理",
+        "englishName": "WM game management",
+        "menuLevel": 2,
+        "name": "WM电子游戏管理",
+        "url": "/adGame/platformListWM",
+        "children": [
+          {
+            "descritpion": "游戏列表",
+            "englishName": "Game listing",
+            "menuLevel": 3,
+            "name": "WM游戏列表",
+            "url": "/adGame/findGameList"
+          },
+          {
+            "descritpion": "平台是否维护",
+            "englishName": "Platform under maintenance",
+            "menuLevel": 3,
+            "name": "WM平台是否维护",
+            "url": "/adGame/updatePlatformStatus"
+          },
+          {
+            "descritpion": "游戏状态修改",
+            "englishName": "Did the game modify",
+            "menuLevel": 3,
+            "name": "WM游戏状态修改",
+            "url": "/adGame/updateDomainName"
+          }
+        ]
+      }
+    ]
+  }
+]

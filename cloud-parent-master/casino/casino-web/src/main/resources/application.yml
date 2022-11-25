@@ -1,0 +1,83 @@
+server:
+  port: 9200
+
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+#    url: jdbc:mysql://localhost:3306/casino?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: root
+    url: jdbc:mysql://116.212.138.46:3606/casino?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Mysql_123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      auto-commit: true
+      minimum-idle: 4
+      idle-timeout: 60000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+      pool-name: DatebookHikariCP
+      maximum-pool-size: 16
+      connection-test-query: select 1
+  redis:
+    database: 0
+#    host: 154.204.57.237
+    host: 116.212.138.46
+    port: 8000
+    password: Redis_123P
+    timeout: 3000
+  rabbitmq:
+    host: 127.0.0.1 #ip
+    port: 5672      #端口
+    username: qd #账号
+    password: qd123 #密码
+    publisher-returns: true
+    virtual-host: qd
+    publisher-confirm-type: correlated
+    listener:
+      simple:
+        acknowledge-mode: manual
+    template:
+      mandatory: true
+  profiles:
+    active: dev
+project:   #不同环境需配置相应的值
+  title: 千亿科技
+  wmUrl: https://api.a45.me/api/public/Gateway.php   #wm游戏远程地址
+  vendorId: qy01twapi                                #wm代理商(aid)
+  signature: f76aecd01a78c8c2021c91d833ca50c6        #wm代理商标识符
+  ipWhite: 127.0.0.1                     #ip白名单，多个ip逗号分隔,用于admin后台请求web接口
+  smsUrl: http://127.0.0.1:9600                #短信服务模块
+  merchant: js                                 #短信服务校验，代码中固定限制是js
+  jwtsecrect: fda#$&%$3t55v785A45DF$^&#*JGRstTRG   #jwt生成token秘钥
+  goldenf: #goldenf游戏配置
+    apiUrl: http://kk.test.gf-gaming.com/gf
+    recordUrl: http://kk.test.gf-gaming.com/gf
+    secretKey: 16e4ef534cec559430e07e05eb71c719
+    operatorToken: 7970f61d512b7b681aa149fad927eee8
+    currency: USD #币种
+  obdj: #OB电竞
+    merchant: 158976080828826092
+    secretKey: 55640357d0e3c8e6bef4a36367decdf9
+    apiUrl: https://djtop.merchantapi09.com
+    recordUrl: https://djtoppull.merchantapi09.com
+    currencyCode: 2 #美元
+    tester: 1  #用户类型： 1-测试、0-正式
+  obty: #OB体育
+    merchantCode: 263625
+    secretKey: yI>o@R#%DEY3&dnx7:BfpW+Y6>2I:r
+    apiUrl: https://sandbox-gateway.sportxxxw1box.com
+    currency: 2 #美元
+  swagger:
+    enable: true                           #是否开启swagger接口文档
+  telegramBot:  #定时器执行异常推送消息
+    token: 5075415436:AAHw20_vMAaajpIlGjCtdoF-ONH2Pnqwdhs    #telegram机器人token
+    chatId: -734299530
+
